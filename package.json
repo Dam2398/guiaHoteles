@@ -1,7 +1,7 @@
 {
   "name": "guia-hoteles",
   "version": "1.0.0",
-  "description": "Primer proyecto de Nodejs",
+  "description": "Primer proyecto Nodejs",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
