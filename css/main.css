@@ -9,3 +9,13 @@ footer{
   margin-bottom: 0px;
   margin-top: 10px;
 }
+
+.card-hotel{/*del mismot tamaño todas las casillas*/
+  flex: 1 150px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 10px;
+}
+
+.btn-reservsa{
+  width: 100%;
+}
