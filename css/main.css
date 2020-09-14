@@ -1,6 +1,7 @@
 .jumbotron{
   background-color:#ffff007a;
   color: black;
+  margin-top: 50px;/*para que no se lo coma la barra de navegacion, con el fixed-top*/
 }
 
 footer{
@@ -18,4 +19,8 @@ footer{
 
 .btn-reservsa{
   width: 100%;
+}
+
+.navbar-dam{
+  background-color: #045d6c;
 }
