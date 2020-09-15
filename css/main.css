@@ -12,13 +12,13 @@ footer{
 }
 
 .card-hotel{/*del mismot tamaño todas las casillas*/
-  flex: 1 150px;
-  padding: 2px 5px 2px 5px;
+  flex: 1 200px;
   margin-top: 10px;
 }
 
 .btn-reservsa{
   width: 100%;
+  border-radius: 0px;/*Se quita el borde*/
 }
 
 .navbar-dam{
