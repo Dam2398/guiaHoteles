@@ -57,13 +57,19 @@
           </ol>
         </nav>
 
-        <ul class="nav nav-pills" id="myTab" role="tablist">
+        <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
           <!--<ul class="nav nav-tabs" id="myTab" role="tablist" y poner tab en data-toggle>-->
           <li class="nav-item">
             <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a><!--data-toggle es un data attributes, incorpora la parte de javascript para la funcionalidad de la pestaña, vincula las pestañas con el panel-->
           </li>
           <li class="nav-item">
+            <a class="nav-link" id="promo-tab" data-toggle="pill" href="#promo" role="tab" aria-controls="promo" aria-selected="false">Promoción del día</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a><!--href debe coincidir con el id del panel que va a mostrar-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="forma-tab" data-toggle="pill" href="#forma" role="tab" aria-controls="forma" aria-selected="false">Como pagar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
@@ -123,6 +129,23 @@
               </div>
           </div>
 
+          <div class="tab-pane fade" id="promo" role="tabpanel" aria-labelledby="promo-tab">
+            
+            <div class="card-columns">
+               <div class="card card-hotel justify-content-between mr-1 ml-1">
+                <img src="img/hotel1.png" class="card-img-top" alt="hotel img">
+                <div class="card-body">
+                  <h5 class="card-title">Fiesta Americana Viaducto Aeropuerto<span class="badge badge-pill badge-success">Descuento</span></h5>
+                  <h6 class="card-subtitle text-muted">Ciudad de México</h6>
+                  <p class="card-text">Las habitaciones del hotel disponen de TV de pantalla plana.</p>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+                </div>
+               </div>
+            </div>
+          </div>
+
           <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
 
             <div class="d-flex justify-content-center">
@@ -138,6 +161,12 @@
               </div>
             </div>
 
+          </div>
+
+          <div class="tab-pane fade" id="forma" role="tabpanel" aria-labelledby="forma-tab">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
           </div>
 
           <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
