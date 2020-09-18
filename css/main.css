@@ -33,3 +33,7 @@ footer{
   background-color: #045d6c;
   color: white;
 }
+
+.tab-content{
+  padding-top: 10px;
+}

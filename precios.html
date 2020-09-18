@@ -46,7 +46,8 @@
         <h1>Hoteles</h1>
       </div>
 
-      <div class="container"
+      <div class="container">
+
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -56,54 +57,95 @@
           </ol>
         </nav>
 
-        <div class="table-responsive">
-          <table class="table table-dam table-hover"><!--The .table-hover class adds a hover effect (grey background color) on table rows-->
-            <thead>
-              <tr>
-                <th>Calidad</th>
-                <th>CDMX</th>
-                <th>Acapulco</th>
-                <th>Cancun</th>
-                <th>Veracruz</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                </td>
-                <td>$200</td>
-                <td>$300</td>
-                <td>$250</td>
-                <td>$360</td>
-              </tr>
-              <tr>
-                <td><samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                </td>
-                <td>$200</td>
-                <td>$300</td>
-                <td>$250</td>
-                <td>$360</td>
-              </tr>
-              <tr>
-                <td><samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam>
-                  <samp class="oi oi-star"></spam></td>
-                <td>$1200</td>
-                <td>$2300</td>
-                <td>$1250</td>
-                <td>$2360</td>
-              </tr>
-            </tbody>
-          </table>
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+          <!--<ul class="nav nav-tabs" id="myTab" role="tablist" y poner tab en data-toggle>-->
+          <li class="nav-item">
+            <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a><!--data-toggle es un data attributes, incorpora la parte de javascript para la funcionalidad de la pestaña, vincula las pestañas con el panel-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a><!--href debe coincidir con el id del panel que va a mostrar-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+              <div class="table-responsive">
+                <table class="table table-dam table-hover"><!--The .table-hover class adds a hover effect (grey background color) on table rows-->
+                  <thead>
+                    <tr>
+                      <th>Calidad</th>
+                      <th>CDMX</th>
+                      <th>Acapulco</th>
+                      <th>Cancun</th>
+                      <th>Veracruz</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                      </td>
+                      <td>$200</td>
+                      <td>$300</td>
+                      <td>$250</td>
+                      <td>$360</td>
+                    </tr>
+                    <tr>
+                      <td><samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                      </td>
+                      <td>$200</td>
+                      <td>$300</td>
+                      <td>$250</td>
+                      <td>$360</td>
+                    </tr>
+                    <tr>
+                      <td><samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam>
+                        <samp class="oi oi-star"></spam></td>
+                      <td>$1200</td>
+                      <td>$2300</td>
+                      <td>$1250</td>
+                      <td>$2360</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+
+          <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <div class="card-header" style="background-color:blue; color:white;">
+                  Tarjetas
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Credito</li>
+                  <li class="list-group-item">Debito</li>
+                  <li class="list-group-item">PayPal</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+            Comentarios
+          </div>
+
         </div>
+
 
 
 
