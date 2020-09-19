@@ -98,7 +98,7 @@
               <p class="card-text">El Sofitel Mexico City Reforma se encuentra en Ciudad de México, a 90 metros de la embajada de Estados Unidos, y ofrece alojamiento con aire acondicionado y bar. El alojamiento cuenta con restaurante, recepción 24 horas, room service y wifi gratis. El hotel cuenta con pileta cubierta y servicio de conserjería.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
           <div class="card card-hotel justify-content-between mr-1 ml-1">
@@ -109,7 +109,7 @@
               <p class="card-text">La Casa San Jacinto se encuentra en Ciudad de México, a 5 km del Cinematheque National, y ofrece alojamiento con restaurante, estacionamiento privado gratuito, jardín y terraza. Todas las habitaciones cuentan con TV de pantalla plana con canales vía satélite y baño privado. Hay room service y wifi gratis en todas las instalaciones.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
           <div class="card card-hotel justify-content-between mr-1 ml-1">
@@ -120,7 +120,7 @@
               <p class="card-text">Este pequeño hostal, con patios y jardines, se encuentra en el el barrio de Cuauhtémo de la ciudad de México. Se encuentra a sólo 3 minutos a pie del paseo de la Reforma, y a menos de 2 km del Bosque de Chapultepec.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
           <div class="card card-hotel justify-content-between mr-1 ml-1">
@@ -131,7 +131,7 @@
               <p class="card-text">El Felix Boutique Apartments by Viadora se encuentra en Ciudad de México, a 2,7 km del castillo de Chapultepec, y ofrece una terraza y vistas a la ciudad. Este hotel de 4 estrellas cuenta con recepción 24 horas y servicio de conserjería. Hay wifi gratis y estacionamiento privado por un adicional.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
           <div class="card card-hotel justify-content-between mr-1 ml-1">
@@ -142,7 +142,7 @@
               <p class="card-text">Las habitaciones del hotel disponen de TV de pantalla plana.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
           <div class="card card-hotel justify-content-between mr-1 ml-1">
@@ -152,10 +152,40 @@
               <p class="card-text">El Motel One Manchester-Piccadilly tiene una ubicación céntrica a 5 minutos a pie de la estación de tren Manchester Piccadilly y ofrece conexión wifi gratis y acceso al bar del alojamiento, One Lounge.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-info btn-reservsa"><span class="oi oi-plus footer-padding"></span>Información</button>
+              <button type="button" class="btn btn-info btn-reservsa" data-toggle="modal" data-target="#exampleModal"><span class="oi oi-plus footer-padding"></span>Información</button>
             </div>
           </div>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Correo:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <footer>
