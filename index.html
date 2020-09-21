@@ -55,13 +55,13 @@
 
         <div class="row">
           <div class="col-sm-4">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_pago" aria-expanded="false" aria-controls="multiCollapseExample1">¿Cómo pago?</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_pago" aria-expanded="false" aria-controls="multiCollapseExample1" id="id_btn_como_pago">¿Cómo pago?</button>
           </div>
           <div class="col-sm-4">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_reservar" aria-expanded="false" aria-controls="multiCollapseExample2">¿Cómo reservar?</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_reservar" aria-expanded="false" aria-controls="multiCollapseExample2" id="id_btn_como_reservar">¿Cómo reservar?</button>
           </div>
           <div class="col-sm-4">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_funciona" aria-expanded="false" aria-controls="multiCollapseExample3">¿Cómo funciona?</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#id_como_funciona" aria-expanded="false" aria-controls="multiCollapseExample3" id="id_btn_como_funciona">¿Cómo funciona?</button>
           </div>
         </div>
 
@@ -254,7 +254,50 @@
         $('[data-toggle="popover"]').popover();
         $('.carousel').carousel({
           interval:2000
-        })
+        });
+
+        $('#id_como_pago').on('show.bs.collapse', function(e){
+          console.log('Hola');
+          if( $('#id_btn_como_pago').hasClass('btn-primary')){
+            $('#id_btn_como_pago').removeClass('btn-primary');
+            $('#id_btn_como_pago').addClass('btn-secondary');
+          }
+        });
+        $('#id_como_pago').on('hide.bs.collapse', function(e){
+          if( $('#id_btn_como_pago').hasClass('btn-secondary')){
+            $('#id_btn_como_pago').removeClass('btn-secondary');
+            $('#id_btn_como_pago').addClass('btn-primary');
+          }
+        });
+
+        $('#id_como_reservar').on('show.bs.collapse', function(e){
+          console.log('Hola');
+          if( $('#id_btn_como_reservar').hasClass('btn-primary')){
+            $('#id_btn_como_reservar').removeClass('btn-primary');
+            $('#id_btn_como_reservar').addClass('btn-secondary');
+          }
+        });
+        $('#id_como_reservar').on('hide.bs.collapse', function(e){
+          if( $('#id_btn_como_reservar').hasClass('btn-secondary')){
+            $('#id_btn_como_reservar').removeClass('btn-secondary');
+            $('#id_btn_como_reservar').addClass('btn-primary');
+          }
+        });
+
+        $('#id_como_funciona').on('show.bs.collapse', function(e){
+          console.log('Hola');
+          if( $('#id_btn_como_funciona').hasClass('btn-primary')){
+            $('#id_btn_como_funciona').removeClass('btn-primary');
+            $('#id_btn_como_funciona').addClass('btn-secondary');
+          }
+        });
+        $('#id_como_funciona').on('hide.bs.collapse', function(e){
+          if( $('#id_btn_como_funciona').hasClass('btn-secondary')){
+            $('#id_btn_como_funciona').removeClass('btn-secondary');
+            $('#id_btn_como_funciona').addClass('btn-primary');
+          }
+        });
+
       }); 
     </script>
 
