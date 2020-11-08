@@ -1,0 +1,47 @@
+$yellow : #fce803; /*se declara variable (scss)*/
+$verde-principal: #045d6c; 
+
+@mixin margen($top, $bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+.jumbotron{
+  background-color:$yellow;
+  color: black;
+  margin-top: 50px;/*para que no se lo coma la barra de navegacion, con el fixed-top*/
+}
+
+footer{
+  padding: 10px 10px 0 10px;
+  background-color:$yellow;
+  @include margen(10px,0px);
+}
+
+.card-hotel{/*del mismo tamaño todas las casillas*/
+  flex: 1 200px;
+  @include margen(10px,0px);
+}
+
+.btn-reservsa{
+  width: 100%;
+  border-radius: 0px;/*Se quita el borde*/
+}
+
+.navbar-dam{
+  background-color: $verde-principal;
+}
+
+.footer-padding{
+  padding-right: 10px;
+}
+
+.table-dam{
+  background-color: #045d6c;
+  color: white;
+}
+
+.tab-content{
+  padding-top: 10px;
+}
+
