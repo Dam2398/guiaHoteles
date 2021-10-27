@@ -1,0 +1,37 @@
+/*se declara variable (less)*/
+.jumbotron {
+  background-color: #fce803;
+  color: black;
+  margin-top: 50px;
+  /*para que no se lo coma la barra de navegacion, con el fixed-top*/
+}
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #fce803;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.card-hotel {
+  /*del mismo tamaño todas las casillas*/
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.btn-reservsa {
+  width: 100%;
+  border-radius: 0px;
+  /*Se quita el borde*/
+}
+.navbar-dam {
+  background-color: #045d6c;
+}
+.footer-padding {
+  padding-right: 10px;
+}
+.table-dam {
+  background-color: #045d6c;
+  color: white;
+}
+.tab-content {
+  padding-top: 10px;
+}
